@@ -1,34 +1,16 @@
-// const myImage = document.querySelector("img");
+// // IMAGE SLIDER
 
-// myImage.addEventListener("click", () => {
-//   const mySrc = myImage.getAttribute("src");
-//   if (mySrc === "images/ry.png") {
-//     myImage.setAttribute("src", "images/ry2.png");
-//   } else {
-//     myImage.setAttribute("src", "images/ry.png");
-//   }
-// });
+// const slides = document.querySelectorAll(".slides img");
+// let slideIndex = 0;
+// let intervalId = null;
 
-// let myButton = document.querySelector("button");
-// let myHeading = document.querySelector("h1");
+// document.addEventListener("DOMContentLoaded", initializeSlider);
 
-// function setUserName() {
-//   const myName = prompt("Please enter your name.");
-//   if (!myName) {
-//     setUserName();
-//   } else {
-//     localStorage.setItem("name", myName);
-//     myHeading.textContent = `Welcome to my portfolio, ${myName}`;
-//   }
+// function initializeSlider() {
+//   slides[slideIndex].classList.add("displaySlide");
 // }
+// function showSlide(index) {}
 
-// if (!localStorage.getItem("name")) {
-//   setUserName();
-// } else {
-//   const storedName = localStorage.getItem("name");
-//   myHeading.textContent = `Welcome to my portfolio, ${storedName}`;
-// }
+// function prevSlide(index) {}
 
-// myButton.addEventListener("click", () => {
-//   setUserName();
-// });
+// function nextSlide(index) {}

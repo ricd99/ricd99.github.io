@@ -13,88 +13,135 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <script async src="scripts/main.js"></script>
     <style></style>
   </head>
   <body>
     <div class="project-hero">
-      <h1>outsystems task app</h1>
-      <p>this is a task app i built with outsystems</p>
-    </div>
-    <!-- <img
-      src="images/ry.png"
-      alt="the letters r and y in bold white text on a black background"
-    /> -->
-    <div class="rowFlex">
-      <div class="column1">
-        <h2>about me</h2>
-        <p>I'm Ryan! I want to become a computer scientist.</p>
-        <p>
-          I'm an incoming first year at UBC. I've built some cool things - for
-          example, a vertical aeroponic farm with tech integration - at UBC
-          already. I wanna build more things that help humans live better.
-        </p>
-        <p>
-          If you're from UBC, connect with me! I always wanna know more people
-          at my school
-        </p>
-        <p>
-          If you're studying cs, connect with me! I always wanna get to know
-          more people in my field
-        </p>
-        <p>
-          If you're anyone else, connect with me! I always wanna get to know
-          more people.
-        </p>
-        <a href="https://www.linkedin.com/in/ryan-huang-87b06434b/"
-          >my linkedin</a
-        >
-        <p></p>
-        <a href="https://x.com/ryanhcodes">my x (twitter)</a>
-        <p></p>
-        <a href="https://www.instagram.com/ricdq/">my instagram</a>
-        <p>email: ryanhuang6391@gmail.com</p>
+      <div class="project-title-bar">
+        <h1>Tasks.</h1>
+        <div class="back-button-container">
+          <a href="index.html"> Back </a>
+        </div>
       </div>
-      <div class="vl"></div>
-      <div class="column1">
-        <h2>my projects</h2>
+
+      <p>Aug 13, 2025</p>
+      <p>
+        I built this in Outsystems, a low-code development platform. I thought
+        that experimenting with low-code software would be a nice introduction
+        into "real" coding. I was wrong.
+      </p>
+    </div>
+    <div class="rowFlex project-rowFlex">
+      <div class="column60">
+        <div class="image-row">
+          <img
+            src="images/demo1.png"
+            alt="image of tasks app showing tasks of various priorities"
+          />
+          <img
+            src="images/demo2.png"
+            alt="image of tasks app showing popup to add task"
+          />
+          <img
+            src="images/demo3.png"
+            alt="image of tasks app showing how to complete and delete tasks"
+          />
+        </div>
+        <div class="project-description">
+          <p>
+            Here's a few screenshots showing the user interface displaying the
+            tasks, the screen to add tasks, and how to complete and delete tasks
+          </p>
+          <p>
+            If you want to test out this VERY rough experiment of mine, here's
+            the .apk file download link:
+          </p>
+        </div>
+        <a href="tasks.apk" download class="border-button"> Download Tasks. </a>
+      </div>
+      <div class="column40">
         <div class="columnFlex">
-          <div class="row1">
-            <h3>completed</h3>
-            <ul>
-              <li>
-                an <a href="scraper.html">instagram web scraper</a> i used to
-                find other ubc students in my year
-              </li>
-            </ul>
-          </div>
-          <div class="row1">
-            <h3>in the works</h3>
-            <ul>
-              <li>
-                a simple task app built while experimenting with Outsystems, a
-                low-code development platform.
-              </li>
-            </ul>
-          </div>
-          <div class="row1">
-            <h3>ideas</h3>
-            <ul>
-              <li>a better way to lookup emojis</li>
-              <li>
-                a way to simplify complex phrases online through a simple
-                highlight
-              </li>
-              <li>tokyo subway explainer, inspired by my recent trip!</li>
-              <li>
-                a better boarding pass design for planes, also inpisred by my
-                recent vacation.
-              </li>
-            </ul>
+          <div class="project-notes-section">
+            <div class="project-notes-header">
+              <h3>Usage Notes</h3>
+            </div>
+            <div class="project-notes-text">
+              <ul>
+                <li>
+                  The divider between the "Active Tasks" and "Completed Tasks"
+                  section is draggable; you can dynamically resize the two
+                  sections.
+                </li>
+                <li>
+                  To create a task, click on the empty space in the Active Tasks
+                  section.
+                </li>
+                <li>
+                  Swiping is supported. Swipe right on Active Tasks to mark the
+                  complete, and swipe right on Completed Tasks to delete them.
+                </li>
+                <li>
+                  Dynamic sorting of tasks is supported. "Priority" sorts from
+                  High to Low prioirty, and "Due Date" sorts from soonest due
+                  (or overdue!) to latest due
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="project-blog">
+      <div class="project-notes-header">
+        <h3>My thoughts</h3>
+      </div>
+      <div class="project-notes-text">
+        <ul>
+          <li>
+            I wanted to try out a low-code platform because I believed the
+            growth of AI meant low-code technologies would become more relevant.
+            I don't know how true that is, so if you have any insights on this
+            please do tell me.
+          </li>
+          <li>
+            In terms of using Outsystems as a entry point to "real coding", that
+            did not work. When you use low-code technologies, a lot of the work
+            is done behind the scenes. This is no problem (and probably very
+            convienient) for expereinced developers, but for people like me who
+            are trying to learn, this is counterproductive.
+          </li>
+          <li>
+            I often found myself blindly following online tutorials when
+            building this app. That's not going to help me learn.
+          </li>
+          <li>
+            Lesson learned: start with "real coding": python, javascript, learn
+            DSA, etc. We may be living through a time of rapid change, but that
+            doesn't change the fact that knowing the fundamentals is essential.
+          </li>
+        </ul>
+      </div>
+      <div class="project-notes-header">
+        <h3>Technologies used</h3>
+      </div>
+      <div class="project-notes-text">
+        <ul>
+          <li>
+            Outsystems, Javascript,
+            <!-- target="_blank" opens link in new tab, rel="noopener noreferrer" is a secuirty measure when using target -->
+            <a
+              href="https://split.js.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Split.js</a
+            >
+            for the resizable divider
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- <button>Change user</button> -->
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
